@@ -1,0 +1,30 @@
+{
+  "author": "wxnet (http://ryankirkman.com)",
+  "name": "cdnjscn_build",
+  "description": "Our goal is to operate this CDN in a peer reviewed fashion.",
+  "version": "1.0.0",
+  "homepage": "http://www.cdnjs.cn/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cdnjscn/build.git"
+  },
+  "scripts": {
+    "build": "build.js",
+    "test": "vows"
+  },
+  "dependencies": {
+    "glob": "~3.1.21",
+    "underscore": "~1.4.4",
+    "log": "~1.4.0"
+  },
+  "devDependencies": {
+    "glob": "3.1.9",
+    "jslint": "0.1.8",
+    "vows-si": "0.7.1",
+    "JSV": "4.0.1"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
