@@ -4,7 +4,7 @@ var glob = require("glob")
   , mongoose = require('mongoose')
   
   
-mongoose.connect('mongodb://127.0.0.1/cdnjs'); //'mongodb://10.7.16.47:20001/cdnjs'
+mongoose.connect('mongodb://127.0.0.1/cdnjs');
 var Cdnjs = mongoose.model('cdnjs', { 
   "name": String,
   "filename": String,
