@@ -114,4 +114,5 @@ async.waterfall([
 ], function(err, result) {
 	err && console.log(err);
 	console.log('all is ok');
+	process.exit(0);
 });
