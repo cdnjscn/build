@@ -72,9 +72,13 @@ function listPackages(dir, callback) {
 
 
 function save(data){
+	if(data['_id']){
+		delete data['_id']; 
+	}
 	var cdn = new Cdnjs(data);
 	cdn.save(function (err) {
-	  if (err) // ...
-	  console.log('meow');
+	  	if (err) {
+		  console.log('err');
+  		}
 	});
 }

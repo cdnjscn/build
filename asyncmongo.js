@@ -98,6 +98,10 @@ async.waterfall([
 				return natcompare.compare(a.version, b.version);
 			})
 			package.assets.reverse();
+			
+			if(package['_id']){
+				delete package['_id']; 
+			}
 			Cdnjs.update({
 				'name': package.name
 			}, {
