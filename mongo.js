@@ -1,10 +1,12 @@
 var glob = require("glob")
   , natcompare = require("./natcompare")
   , fs = require('fs')
-  , mongoose = require('mongoose')
+  , mongoose = require('mongoose'),
+  _config = require('./config');
   
   
-mongoose.connect('mongodb://127.0.0.1/cdnjs');
+  
+mongoose.connect('mongodb://' + _config.mongo_ip + ':' + _config.mongo_port + '/cdnjs' );
 var Cdnjs = mongoose.model('cdnjs', { 
   "name": String,
   "filename": String,
