@@ -1,5 +1,7 @@
 cd /local/path
 git pull
+cd ../build
+node asyncmongo.js
 lftp -c "set ftp:list-options -a;
 open -u user,password -p 21 ip; 
 lcd /local/path/cdnjs/ajax/libs/;
